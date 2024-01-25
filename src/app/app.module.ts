@@ -8,7 +8,7 @@ import { MaterialAngularModule } from './material-import.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
