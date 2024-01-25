@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { CopyrightComponent } from './copyright/copyright.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -10,10 +11,14 @@ import { CopyrightComponent } from './copyright/copyright.component';
   declarations: [
     NewsLetterComponent,
     QuickLinksComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    FooterComponent
   ]
 })
 export class FooterModule { }

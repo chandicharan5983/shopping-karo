@@ -1,0 +1,22 @@
+.welcome_header {
+    background: #689f38;
+    
+
+    .container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 5px 0;
+        color: #fff;
+        border-bottom: 1px solid #ccc;
+
+        .user_control {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}

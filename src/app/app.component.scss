@@ -8,3 +8,7 @@
 :root {
     --main-font-color: #333;
 }
+
+::ng-deep p {
+    margin: 0 !important;
+}
