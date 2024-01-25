@@ -5,6 +5,7 @@ import { ShoppingContainerComponent } from './shopping-container/shopping-contai
 import { HeaderModule } from '../header/header.module';
 import { FooterModule } from '../footer/footer.module';
 import { BodyModule } from '../body/body.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BodyModule } from '../body/body.module';
     CommonModule,
     HeaderModule,
     FooterModule,
-    BodyModule
+    BodyModule,
+    RouterModule.forChild([{path:'', component: ShoppingContainerComponent}]),
   ]
 })
 export class ShoppingContainerModule { }
