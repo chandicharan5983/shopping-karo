@@ -5,7 +5,7 @@
         </div>
 
         <div class="welcome">
-            <p>Welcome to our market! </p>
+            <p> Shopping Karo </p>
         </div>
 
         <div class="user_control">
@@ -13,13 +13,20 @@
                 <p>USD</p>
             </div>
             <div class="compare">
-                <p>Compare</p>
+                <button mat-button>Compare (0)</button>
             </div>
             <div class="wishlist">
-                <p>Wishlist</p>
+                <button mat-button>Wishlist (0)</button>
             </div>
             <div class="account">
-                <p>Account</p>
+                <button mat-button [matMenuTriggerFor]="beforeMenu">Account</button>
+                <mat-menu #beforeMenu="matMenu" xPosition="before" class="account_mat_button">
+                    <button mat-menu-item>Account Setting</button>
+                    <button mat-menu-item>Lock Screen</button>
+                    <button mat-menu-item>Help</button>
+                    <hr>
+                    <button mat-menu-item>Logout</button>
+                </mat-menu>
             </div>
         </div>
     </div>

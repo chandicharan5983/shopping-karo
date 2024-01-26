@@ -1,1 +1,47 @@
-<p>search-bar works!</p>
+<div class="search__bar">
+    <div class="logo">
+        <h2>Emporium</h2>
+    </div>
+    <div class="search__type">
+        <div class="input__field">
+            <mat-form-field appearance="outline">
+                <mat-label>Pokemon</mat-label>
+                <mat-select>
+                    <mat-option>-- None --</mat-option>
+                    <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name" [disabled]="group.disabled">
+                        <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value">
+                            {{pokemon.viewValue}}
+                        </mat-option>
+                    </mat-optgroup>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="input__field">
+            <mat-form-field appearance="outline">
+                <mat-label>Outline form field</mat-label>
+                <input matInput placeholder="Type to search...">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="shopping__cart">
+        <button mat-button [matMenuTriggerFor]="beforeMenu">Shopping Cart </button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before" class="account_mat_button">
+            <div class="shopping_cart_details">
+                <div class="shopping_title">
+                    <div class="item_number">
+                        <p>0 Item</p>
+                    </div>
+                    <div class="view_cart">
+                        <p>View Cart</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="shopping__content">
+                    <p>You have no items in your shopping cart.</p>
+                </div>
+            </div>
+        </mat-menu>
+    </div>
+</div>

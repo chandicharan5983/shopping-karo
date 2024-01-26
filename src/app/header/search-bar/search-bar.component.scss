@@ -1,0 +1,81 @@
+.search__bar {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 0;
+    color: #fff;
+
+    .search__type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 40px !important;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .shopping__cart {
+        &::ng-deep {
+            span.mdc-button__label {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.shopping_cart_details {
+    padding: 0 10px;
+
+    .item_number, .view_cart {
+        p {
+            text-transform: uppercase;
+            color: #0000008a;
+        }
+    }
+
+    .shopping__content {
+        p {
+           color:  #0000008a;
+        }
+    }
+
+    .view_cart {
+        p {
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .shopping_title {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// .input__field {
+//     &::ng-deep {
+//         .mat-form-field-flex {
+//             >.mat-form-field-infix {
+//                 padding: 0.2em 0px !important;
+//             }
+//         }
+
+//         .mat-form-field-label-wrapper {
+//             top: -1.5em !important;
+//         }
+
+//         .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float {
+//             .mat-form-field-label {
+//                 transform: translateY(-1.1em) scale(.75) !important;
+//                 width: 133.33333% !important;
+//             }
+//         }
+//     }
+// }
+

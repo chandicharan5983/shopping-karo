@@ -1,9 +1,9 @@
 .welcome_header {
     background: #689f38;
-    
 
     .container {
-        width: 90%;
+        width: 100%;
+        max-width: 1300px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -12,11 +12,44 @@
         color: #fff;
         border-bottom: 1px solid #ccc;
 
+        .welcome {
+            p {
+                text-transform: uppercase;
+                letter-spacing: 1.3px;
+            }
+        }
+
         .user_control {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            gap: 5px;
+            
+            &::ng-deep {
+
+                .mat-mdc-button.mat-mdc-button-base {
+                    height: 30px !important;
+                }
+
+                span.mdc-button__label {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+::ng-deep {
+    .account_mat_button {
+        max-width: 450px !important;
+        min-width: 200px !important;
+
+        .mat-mdc-menu-item {
+            min-height: 40px !important;
         }
     }
 }
