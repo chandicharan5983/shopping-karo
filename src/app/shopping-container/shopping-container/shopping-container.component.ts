@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ShoppingContainerComponent {
 
+  constructor() {
+    console.log('fdghjkl')
+  }
+
 }
