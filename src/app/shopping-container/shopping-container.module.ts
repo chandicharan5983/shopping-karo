@@ -10,20 +10,22 @@ import { HomeComponent } from '../body/home/home.component';
 import { FashionComponent } from '../body/fashion/fashion.component';
 import { BodyContainerComponent } from '../body/body-container/body-container.component';
 import { ShoppingContainerRoutingModule } from './shopping-container-routing.module';
+import { BodyModule } from '../body/body.module';
 
 
 @NgModule({
   declarations: [
     ShoppingContainerComponent,
-    BodyContainerComponent,
-    HomeComponent,
-    FashionComponent,
+    // BodyContainerComponent,
+    // HomeComponent,
+    // FashionComponent,
   ],
   imports: [
     CommonModule,
     HeaderModule,
     FooterModule,
     ShoppingContainerRoutingModule,
+    BodyModule
   ]
 })
 export class ShoppingContainerModule { }

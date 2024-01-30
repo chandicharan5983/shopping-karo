@@ -5,8 +5,9 @@ import { FashionComponent } from './fashion/fashion.component';
 import { BodyContainerComponent } from './body-container/body-container.component';
 
 const routes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
-    { path: 'fashion', component: FashionComponent }
+    { path: 'fashion', component: FashionComponent },
 ];
 
 @NgModule({

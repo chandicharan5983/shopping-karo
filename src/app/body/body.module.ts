@@ -7,16 +7,16 @@ import { BodyRoutingModule } from './body-routing.module';
 
 @NgModule({
   declarations: [
-    // BodyContainerComponent,
-    // HomeComponent,
-    // FashionComponent,
+    BodyContainerComponent,
+    HomeComponent,
+    FashionComponent,
   ],
   imports: [
     CommonModule,
     BodyRoutingModule
   ],
-  // exports: [
-  //   BodyContainerComponent,
-  // ]
+  exports: [
+    BodyContainerComponent,
+  ]
 })
 export class BodyModule { }
