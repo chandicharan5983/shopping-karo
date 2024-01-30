@@ -11,23 +11,24 @@ const routes: Routes = [
   //   pathMatch: 'full',
   //   loadChildren: () => import('./shopping-container/shopping-container.module').then(m => m.ShoppingContainerModule)
   // },
-  {
-    path: 'shopping',
-    component: ShoppingContainerComponent,
-    children: [
-      {
-        path: '',
-        // component: HomeComponent,
-        // loadChildren: () => import('../app/shopping-container/shopping-container.module').then(m => m.ShoppingContainerModule)
-        loadChildren: () => import('../app/body/body.module').then(m => m.BodyModule)
-      },
-      // {
-      //   path: 'fashion',
-      //   component: FashionComponent,
-      //   // loadChildren: () => import('../app/body/body.module').then(m => m.BodyModule)
-      // }
-    ]
-  }
+  // {
+  //   path: '',
+  //   component: ShoppingContainerComponent,
+  //   children: [
+  //     {
+  //       path: '',
+  //       component: HomeComponent,
+  //       // loadChildren: () => import('../app/shopping-container/shopping-container.module').then(m => m.ShoppingContainerModule)
+  //       loadChildren: () => import('../app/body/body.module').then(m => m.BodyModule)
+
+  //     },
+  //     // {
+  //     //   path: 'fashion',
+  //     //   component: FashionComponent,
+  //     //   // loadChildren: () => import('../app/body/body.module').then(m => m.BodyModule)
+  //     // }
+  //   ]
+  // }
 ];
 
 @NgModule({

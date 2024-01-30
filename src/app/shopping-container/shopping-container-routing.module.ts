@@ -5,15 +5,17 @@ import { FashionComponent } from '../body/fashion/fashion.component';
 import { ShoppingContainerComponent } from './shopping-container/shopping-container.component';
 
 const routes: Routes = [
-    // {
-    //     path: '',  children: [
-    //         {
-    //             path: '',
-    //             loadChildren: () => import('../body/body.module').then(m => m.BodyModule)
-    //         },
-    //         // { path: 'fashion', component: FashionComponent }
-    //     ]
-    // },
+    {
+        path: '',  children: [
+            // {
+            //     path: '',
+            //     loadChildren: () => import('../body/body.module').then(m => m.BodyModule)
+            // },
+            // { path: '', component: HomeComponent },
+            { path: 'fashion', component: FashionComponent },
+            { path: 'home', component: HomeComponent },
+        ]
+    },
 ];
 
 @NgModule({
