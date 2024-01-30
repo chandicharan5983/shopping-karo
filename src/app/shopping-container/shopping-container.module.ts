@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from '../body/home/home.component';
 import { FashionComponent } from '../body/fashion/fashion.component';
 import { BodyContainerComponent } from '../body/body-container/body-container.component';
+import { ShoppingContainerRoutingModule } from './shopping-container-routing.module';
 
 
 @NgModule({
@@ -22,9 +23,7 @@ import { BodyContainerComponent } from '../body/body-container/body-container.co
     CommonModule,
     HeaderModule,
     FooterModule,
-    // BodyModule,
-    RouterModule.forChild([{path:'', component: ShoppingContainerComponent}]),
-    // RouterModule.forChild([{path:'', component: ShoppingContainerComponent}]),
+    ShoppingContainerRoutingModule,
   ]
 })
 export class ShoppingContainerModule { }

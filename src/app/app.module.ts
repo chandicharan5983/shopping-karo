@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialAngularModule } from './material-import.module';
 import { ShoppingContainerModule } from './shopping-container/shopping-container.module';
-import { HeaderModule } from './header/header.module';
-import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -19,8 +17,6 @@ import { FooterModule } from './footer/footer.module';
     BrowserAnimationsModule,
     MaterialAngularModule,
     ShoppingContainerModule,
-    HeaderModule,
-    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

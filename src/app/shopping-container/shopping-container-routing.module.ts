@@ -6,20 +6,18 @@ import { ShoppingContainerComponent } from './shopping-container/shopping-contai
 
 const routes: Routes = [
     {
-        path: '',  children: [
-            // {
-            //     path: '',
-            //     loadChildren: () => import('../body/body.module').then(m => m.BodyModule)
-            // },
-            // { path: '', component: HomeComponent },
-            { path: 'fashion', component: FashionComponent },
+        path: '',
+        component: ShoppingContainerComponent,
+        children: [
+            { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            { path: 'fashion', component: FashionComponent },
         ]
-    },
+    }
 ];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class BodyRoutingModule { }
+export class ShoppingContainerRoutingModule { }
