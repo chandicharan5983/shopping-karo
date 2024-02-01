@@ -1,17 +1,43 @@
 .search__bar {
     width: 100%;
     max-width: 1300px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 25px 0 0;
     color: #fff;
+
+
 
     .search__type {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-left: 50px;
+
+        .input__field {
+            width: 100%;
+
+            &::ng-deep {
+                .mat-mdc-text-field-wrapper {
+                    background: #fff !important;
+                }
+            }
+
+            .width_full {
+                width: 100%;
+            }
+        }
+
+        .auto {
+            width: auto;
+        }
+    }
+
+    .shopping__cart {
+        display: flex;
+        justify-content: flex-end;
     }
 
     h2 {
@@ -76,10 +102,10 @@
     .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
         --mat-mdc-form-field-label-transform: translateY(-17px) scale(var(--mat- mdc-form-field-floating-label-scale, 0.75)) !important;
         // transform: var(--mat-mdc-form-field-label-transform) !important;
-        transform:translateY( -27px) !important;
+        transform: translateY(-27px) !important;
     }
 
-   
+
 }
 
 // .input__field {

@@ -1,0 +1,31 @@
+.navbar_details {
+    padding: 5px 0;
+    background: #fff;
+    box-shadow: 3px 1px 10px rgba(0, 0, 0, .6);
+    position: sticky;
+    top: 0;
+
+    ul.main_menu {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        justify-content: center;
+        gap: 25px;
+        margin: 0;
+
+        span.mat-mdc-button-persistent-ripple.mdc-button__ripple {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
+            order: 2;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+}

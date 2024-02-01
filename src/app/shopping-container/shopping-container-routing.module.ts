@@ -12,10 +12,7 @@ const routes: Routes = [
             {
                 path: '',
                 loadChildren: () => import('../body/body.module').then(m => m.BodyModule)
-            },
-            // { path: '', redirectTo: 'home', pathMatch: 'full' },
-            // { path: 'home', component: HomeComponent },
-            // { path: 'fashion', component: FashionComponent },
+            },          
         ]
     }
 ];

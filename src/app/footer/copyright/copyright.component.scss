@@ -1,0 +1,30 @@
+.copyright_hr,
+.copyright_content {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    hr {
+        width: 100%;
+    }
+}
+
+.copyright_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left_side,
+    .right_side {
+        p {
+            font-size: 14px;
+            color: #ccc;
+            padding-bottom: 10px;
+
+            span {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+}

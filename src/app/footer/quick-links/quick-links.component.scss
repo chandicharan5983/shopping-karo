@@ -1,0 +1,38 @@
+.quick_links {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+
+    .left_side ul,
+    .middle_side ul {
+        list-style: none;
+        line-height: 35px;
+        color: #ccc;
+        padding-left: 0;
+
+        li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            gap: 5px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.quick_links_hr {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    hr {
+        width: 100%;
+    }
+}

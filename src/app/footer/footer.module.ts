@@ -4,6 +4,7 @@ import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { FooterComponent } from './footer/footer.component';
+import { MaterialAngularModule } from '../material-import.module';
 
 
 
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialAngularModule
   ],
   exports: [
     FooterComponent

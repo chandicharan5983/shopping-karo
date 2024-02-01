@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BodyContainerComponent } from './body-container/body-container.component';
-import { HomeComponent } from './home/home.component';
-import { FashionComponent } from './fashion/fashion.component';
+import { NgModule } from '@angular/core';
 import { BodyRoutingModule } from './body-routing.module';
+import { FashionComponent } from './fashion/fashion.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    BodyContainerComponent,
     HomeComponent,
     FashionComponent,
   ],
@@ -15,8 +13,5 @@ import { BodyRoutingModule } from './body-routing.module';
     CommonModule,
     BodyRoutingModule
   ],
-  exports: [
-    BodyContainerComponent,
-  ]
 })
 export class BodyModule { }
