@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BodyRoutingModule } from './body-routing.module';
 import { FashionComponent } from './fashion/fashion.component';
 import { HomeComponent } from './home/home.component';
+import { MaterialAngularModule } from '../material-import.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     CommonModule,
-    BodyRoutingModule
+    BodyRoutingModule,
+    MaterialAngularModule
   ],
 })
 export class BodyModule { }
