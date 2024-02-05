@@ -1,7 +1,12 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1300px;
-    background: #F2F2F2;
+    // background: #F2F2F2;
     margin: 0 auto;
 
     .shopping__status {
@@ -154,4 +159,100 @@
             gap: 10px;
         }
     }
+}
+
+.full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    background: #fff;
+
+    .all_description {
+        border: 1px solid #cccccc8f;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, .5);
+        padding: 5px 10px;
+
+        .category.text-muted {
+            text-align: center;
+            padding: 5px 0;
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                color: #605c5c;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+
+        .title.text-truncate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .product_price {
+                color: #f44336;
+
+                h6 {
+                    font-size: 16px;
+                }
+            }
+
+            .product_rating {
+                text-align: right;
+
+                &::ng-deep {
+                    .mat-icon {
+                        width: 18px !important;
+                        height: 18px !important;
+                    }
+                    .material-icons {
+                        font-size: 18px !important;
+                    }
+    
+                }
+            }
+        }
+
+        .product_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+
+            
+        }
+
+        &::ng-deep {
+            .mdc-button {
+                min-width: 30px !important;
+                padding: 0 !important;
+                border-radius: 50%;
+            }
+
+            .mat-mdc-button>.mat-icon {
+                margin-right: 0 !important;
+            }
+        }
+    }
+
+    .product_img {
+        img {
+            width: 100%;
+        }
+    } 
+}
+
+.show_brand {
+    margin: 20px 0;
+    background: #F2F2F2;
 }

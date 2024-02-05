@@ -4,6 +4,7 @@ import { BodyRoutingModule } from './body-routing.module';
 import { FashionComponent } from './fashion/fashion.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialAngularModule } from '../material-import.module';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MaterialAngularModule } from '../material-import.module';
   imports: [
     CommonModule,
     BodyRoutingModule,
-    MaterialAngularModule
+    MaterialAngularModule,
+    NgImageSliderModule
   ],
 })
 export class BodyModule { }

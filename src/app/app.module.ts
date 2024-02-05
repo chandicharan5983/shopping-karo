@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialAngularModule } from './material-import.module';
 import { ShoppingContainerModule } from './shopping-container/shopping-container.module';
+import { NgImageSliderModule } from 'ng-image-slider';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { ShoppingContainerModule } from './shopping-container/shopping-container
     BrowserAnimationsModule,
     MaterialAngularModule,
     ShoppingContainerModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
