@@ -5,17 +5,16 @@ import { FashionComponent } from './fashion/fashion.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialAngularModule } from '../material-import.module';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { SharedComponentModule } from '../shared-component/shared-component.module';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    FashionComponent,
-  ],
+  declarations: [HomeComponent, FashionComponent],
   imports: [
     CommonModule,
     BodyRoutingModule,
     MaterialAngularModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    SharedComponentModule,
   ],
 })
-export class BodyModule { }
+export class BodyModule {}

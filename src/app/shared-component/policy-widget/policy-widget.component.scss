@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .mat-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .material-icons {
+    font-size: 48px !important;
+  }
+}
+
+.right {
+  color: #616161;
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
