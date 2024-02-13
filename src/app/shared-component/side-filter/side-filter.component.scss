@@ -18,6 +18,28 @@
     }
 }
 
-mat-slider {
-    width: 300px;
+.price_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+    mat-slider {
+        width: 100%;
+    }
+}
+
+.button_toggle {
+    .mat-button-toggle-standalone.mat-button-toggle-appearance-standard, .mat-button-toggle-group-appearance-standard {
+        border: none !important;
+    }
+}
+
+.brands_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+     img {
+        width: 100%;
+     }
 }

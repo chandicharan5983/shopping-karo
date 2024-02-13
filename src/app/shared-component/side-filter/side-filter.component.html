@@ -51,14 +51,92 @@
                 <mat-panel-description>
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <mat-slider>
-                <input matSliderThumb [(ngModel)]="fromRange">
-              </mat-slider>
-            <p>{{fromRange}}</p>
-            <mat-slider>
-                <input matSliderThumb [(ngModel)]="toRange">
-              </mat-slider>
-            <p>{{toRange}}</p>
+            <div class="price_slider">
+                <div class="from_slider">
+                    <p>From: ${{fromRange}}</p>
+                    <mat-slider>
+                        <input matSliderThumb [(ngModel)]="fromRange">
+                    </mat-slider>
+                </div>
+
+                <div class="to_slider">
+                    <p>To: ${{toRange}}</p>
+                    <mat-slider>
+                        <input matSliderThumb [(ngModel)]="toRange">
+                    </mat-slider>
+                </div>
+            </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Color
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="checkbox">
+                <mat-checkbox color="primary"></mat-checkbox>
+                <mat-checkbox color="accent"></mat-checkbox>
+                <mat-checkbox color="warn"></mat-checkbox>
+                <mat-checkbox color="primary"></mat-checkbox>
+                <mat-checkbox color="accent"></mat-checkbox>
+                <mat-checkbox color="warn"></mat-checkbox>
+            </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Size
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="button_toggle">
+                <mat-button-toggle-group #group="matButtonToggleGroup" multiple>
+                    <mat-button-toggle>
+                      <p>S</p>
+                    </mat-button-toggle>
+                    <mat-button-toggle >
+                        <p>M</p>
+                    </mat-button-toggle>
+                    <mat-button-toggle >
+                        <p>L</p>
+                    </mat-button-toggle>
+                    <mat-button-toggle>
+                      <p>XL</p>
+                    </mat-button-toggle>
+                    <mat-button-toggle>
+                        <p>2XL</p>
+                      </mat-button-toggle>
+                  </mat-button-toggle-group>
+            </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Brands
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="brands_img">
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+                <button mat-button><img src="https://www.emporium.themeseason.com/assets/images/brands/dream.png" alt=""></button>
+            </div>
         </mat-expansion-panel>
 
     </mat-accordion>
