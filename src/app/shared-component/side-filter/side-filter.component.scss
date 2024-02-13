@@ -1,0 +1,23 @@
+.side_filter_category {
+    ul {
+        list-style: none;
+
+        .mdc-button {
+            width: 100%;
+            justify-content: flex-start !important;
+        }
+
+        .mat-mdc-button.mat-mdc-button-base {
+            height: 24px !important;
+            padding-left: 10px;
+        }
+
+        &:first-child {
+            padding: 0;
+        }
+    }
+}
+
+mat-slider {
+    width: 300px;
+}

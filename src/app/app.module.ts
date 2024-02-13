@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MaterialAngularModule } from './material-import.module';
 import { ShoppingContainerModule } from './shopping-container/shopping-container.module';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     BrowserAnimationsModule,
     MaterialAngularModule,
     ShoppingContainerModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    // FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
