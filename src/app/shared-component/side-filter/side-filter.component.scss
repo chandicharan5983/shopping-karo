@@ -23,14 +23,16 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-   
+
     mat-slider {
         width: 100%;
     }
 }
 
 .button_toggle {
-    .mat-button-toggle-standalone.mat-button-toggle-appearance-standard, .mat-button-toggle-group-appearance-standard {
+
+    .mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+    .mat-button-toggle-group-appearance-standard {
         border: none !important;
     }
 }
@@ -39,7 +41,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-     img {
+
+    img {
         width: 100%;
-     }
+    }
 }
