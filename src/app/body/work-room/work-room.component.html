@@ -1,1 +1,36 @@
-<p>work-room works!</p>
+<div class="container">
+    <app-breadcrumbs></app-breadcrumbs>
+
+    <div class="row">
+        <div class="left_side_col">
+            <div class="product_details">
+                <app-item-price-details></app-item-price-details>
+            </div>
+        </div>
+        <div class="right_side_col">
+            <app-policy-widget [policy]="policyArray"></app-policy-widget>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left_side_col">
+            <div class="product_details">
+                <app-item-description></app-item-description>
+            </div>
+        </div>
+        <div class="right_side_col">
+            <app-promotion-widget></app-promotion-widget>
+        </div>
+    </div>
+
+
+    <div class="related_product">
+        <button mat-button> Related Product</button>
+        <hr>
+        <div class="item-widget">
+            <app-item-widget class="all_description" *ngFor="let item of [1, 1, 1, 1, 1]"></app-item-widget>
+        </div>
+    </div>
+    
+
+</div>
