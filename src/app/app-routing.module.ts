@@ -4,9 +4,18 @@ import { AppComponent } from './app.component';
 import { ShoppingContainerComponent } from './shopping-container/shopping-container/shopping-container.component';
 import { HomeComponent } from './body/home/home.component';
 import { FashionComponent } from './body/fashion/fashion.component';
+import { SingUpComponent } from './login-page/sing-up/sing-up.component';
+import { SingInComponent } from './login-page/sing-in/sing-in.component';
 
 const routes: Routes = [
-
+  {
+    path: 'log-in',
+    component: SingInComponent
+  },
+  {
+    path: 'sign-up',
+    component: SingUpComponent
+  },
   {
     path: '',
     pathMatch: 'full',

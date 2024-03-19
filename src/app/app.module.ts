@@ -8,6 +8,7 @@ import { MaterialAngularModule } from './material-import.module';
 import { ShoppingContainerModule } from './shopping-container/shopping-container.module';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { FormsModule } from '@angular/forms';
+import { NgOtpInputModule } from 'ng-otp-input';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     MaterialAngularModule,
     ShoppingContainerModule,
     NgImageSliderModule,
-    // FormsModule
+    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

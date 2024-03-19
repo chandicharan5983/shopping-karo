@@ -1,0 +1,37 @@
+<div class="sign_form">
+    <div class="card">
+        <h2>Login Form</h2>
+
+        <form class="form" autocomplete="off" *ngIf="!showHideLoginForm" @animation>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Email / Phone No</mat-label>
+                <input matInput autocomplete="off">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" autocomplete="off">
+            </mat-form-field>
+        </form>
+
+        <form class="form" autocomplete="off" *ngIf="showHideLoginForm" @animation>
+            <mat-form-field class="example-full-width" appearance="outline" *ngIf="!showHidePhoneNo">
+                <mat-label>Phone No</mat-label>
+                <input matInput type="number" autocomplete="off">
+            </mat-form-field>
+        </form>
+
+        <ng-otp-input *ngIf="showHideLoginForm && showHidePhoneNo" @animation #ngOtpInput (onInputChange)="fn_onOtpChange($event)"
+            [config]="otp_config"></ng-otp-input>
+
+        <a class="fp" (click)="changeLoginPanel()" *ngIf="!showHideLoginForm">Using OTP</a>
+
+        <button type="button" class="login_btn" *ngIf="!showHideLoginForm">Login</button>
+        <button type="button" class="login_btn" *ngIf="showHideLoginForm && !showHidePhoneNo" (click)="getOTP()">Get OTP</button>
+        <button type="button" class="login_btn" *ngIf="showHideLoginForm && showHidePhoneNo" (click)="getOTP()">Login</button>
+
+        <div class="footer_card">
+            <p>Not a member?</p>
+            <a class="sign_up_now" (click)="goToSignUp()">Singup now</a>
+        </div>
+    </div>
+</div>
